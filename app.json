@@ -41,6 +41,10 @@
       "description": "Masukkan ID Channel / Group, Jika ingin mengaktifkan/menonaktifkan forcesub di masukkan 0 saja.",
       "value": "-1001567567365"
     },
+    "FORCE_SUB_CHANNEL4":{
+      "description": "Masukkan ID Channel / Group, Jika ingin mengaktifkan/menonaktifkan forcesub di masukkan 0 saja.",
+      "value": "-1001409737135"
+    },
     "START_MESSAGE": {
       "description": "Pesan Start dari Link, Gunakan HTML format Cok",
       "value": "Hello {first}\n\nSaya dapat menyimpan file pribadi di Saluran Tertentu dan pengguna lain dapat mengaksesnya dari tautan khusus."
