@@ -31,15 +31,15 @@
     },
     "FORCE_SUB_CHANNEL":{
       "description": "Masukkan ID Channel / Group, Jika ingin mengaktifkan/menonaktifkan forcesub di masukkan 0 saja.",
-      "value": "-100"
+      "value": "-1001501037078"
     },
     "FORCE_SUB_CHANNEL2":{
       "description": "Masukkan ID Channel / Group, Jika ingin mengaktifkan/menonaktifkan forcesub di masukkan 0 saja.",
-      "value": "-100"
+      "value": "-1001588513684"
     },
     "FORCE_SUB_CHANNEL3":{
       "description": "Masukkan ID Channel / Group, Jika ingin mengaktifkan/menonaktifkan forcesub di masukkan 0 saja.",
-      "value": "-100"
+      "value": "-1001567567365"
     },
     "START_MESSAGE": {
       "description": "Pesan Start dari Link, Gunakan HTML format Cok",
