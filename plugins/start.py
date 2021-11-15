@@ -1,4 +1,6 @@
-#(©)CodeXBotz
+#(©)Codexbotz
+#𖣘Recode By @yangmutebabi
+
 import os
 import asyncio
 from pyrogram import Client, filters, __version__
@@ -90,9 +92,11 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
-                ]
+                        InlineKeyboardButton("🔱 𝐎𝐖𝐍𝐄𝐑", url=f'https://t.me/yangmutebabi/url')],
+                [       
+                        InlineKeyboardButton("😎 𝙏𝙚𝙣𝙩𝙖𝙣𝙜 𝙎𝙖𝙮𝙖", callback_data = "about"),
+                        InlineKeyboardButton("❌ 𝗧𝗨𝗧𝗨𝗣 𝗘𝗨𝗬", callback_data = "close")],
+	        ]
             ]
         )
         await message.reply_text(
@@ -109,20 +113,21 @@ async def start_command(client: Client, message: Message):
         )
         return
 
+
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "Join Channel",
-                url = client.invitelink)
+                "JOIN DULU EUY",
+                url = client.invitelink),
         ]
     ]
     try:
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Try Again',
+                    text = 'Coba Lagi',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
@@ -160,7 +165,8 @@ async def send_text(client: Bot, message: Message):
         deleted = 0
         unsuccessful = 0
         
-        pls_wait = await message.reply("<i>Broadcasting Message.. This will Take Some Time</i>")
+        
+        pls_wait = await message.reply("<i>Pesan Broadcast, Ini Membutuhkan waktu</i>")
         for row in query:
             chat_id = int(row[0])
             try:
@@ -179,7 +185,7 @@ async def send_text(client: Bot, message: Message):
                 pass
             total += 1
         
-        status = f"""<b><u>Broadcast Completed</u>
+        status = f"""<b><u>Broadcast Berhasil Cuk</u>
 
 Total Users: <code>{total}</code>
 Successful: <code>{successful}</code>
